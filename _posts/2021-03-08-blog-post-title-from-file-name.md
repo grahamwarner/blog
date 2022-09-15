@@ -1,10 +1,14 @@
-## Blog Post Title From First Header
+## Project Introduction
 
-Due to a plugin called `jekyll-titles-from-headings` which is supported by GitHub Pages by default. The above header (in the markdown file) will be automatically used as the pages title.
+I live on Vancouver Island and occasionally travel from Swartz Bay to Tsawwassen via BC Ferries, usually with my car. The ferries on this route run every 1-2 hours and can get full during busy times so you might need to wait a sailing (or more!) if you're unlucky. You can drive to the terminal and purchase a ticket with the hopes that there will be space available, or you can purchase a reservation ($17.00 at time of writing) to reserve your spot. In order to use your reservation, you must arrive at the terminal between 30 and 60 minutes before the scheduled sailing time.
 
-If the file does not start with a header, then the post title will be derived from the filename.
+There are 2 situations that I'd like to avoid:
+1. Arriving at the ferry terminal just after the ferry becomes full. This is frustrating because you may have to wait 1+ hours for the next ferry, and had you arrived slightly earlier, you might have saved yourself hours of wait time.
+2. Paying for a reservation and then finding the ferry empty once you get to the terminal.
 
-This is a sample blog post. You can talk about all sorts of fun things here.
+Your reservation is void if you show up less than 30 minutes before sailing. It can take several minutes to get through the ticketing lineup, so if you purchase a reservation you would likely aim to arrive at the terminal ~40 minutes before sailing (assuming <10 minutes in the lineup). 
+
+There are two strategies for reducing wait time at the terminal and reservation costs
 
 ---
 
