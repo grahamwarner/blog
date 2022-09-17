@@ -18,5 +18,5 @@ There are two situations that I want to model for this project:
 
 ### Data Collection and Exploration
 
-In order to predict if or when your ferry is going to be full, we need to collect data on how often ferries are full.
+In order to predict if or when your ferry is going to be full, we need to collect data on how often ferries are full...
 
