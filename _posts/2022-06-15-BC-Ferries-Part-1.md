@@ -1,6 +1,6 @@
 ## BC Ferries - Part 1
 
-![](images/ferry_landscape.jpg)
+![](/images/ferry_landscape.jpg)
 
 ### Project Introduction
 
