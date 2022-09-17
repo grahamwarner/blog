@@ -1,5 +1,7 @@
 ## BC Ferries - Project Introduction
 
+![](images/ferry_landscape.jpg)
+
 I live on Vancouver Island and occasionally travel from Swartz Bay to Tsawwassen via [BC Ferries](https://www.bcferries.com), usually with my car. The ferries on this route run every 1-2 hours and can get full during busy times so you might need to wait a sailing (or more) if you're unlucky. You can drive to the terminal and purchase a ticket with the hopes that there will be space available, or you can purchase a reservation ($17.00 at time of writing) to reserve your spot. You can purchase reservations up to the day before sailing, as long as the reservations haven't sold out. In order to claim your reservation, you must arrive at the terminal between 30 and 60 minutes before the scheduled sailing time. Your reservation is void if you show up less than 30 minutes before sailing.
 
 There are 2 situations to avoid:
