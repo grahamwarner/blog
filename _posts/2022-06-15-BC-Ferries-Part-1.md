@@ -18,5 +18,23 @@ There are two situations that I want to model for this project:
 
 ### Data Collection and Exploration
 
-In order to predict if or when your ferry is going to be full, we need to collect data on how often ferries are full.
+In order to predict if or when a sailing is going to be full, we need to collect data on how often ferries have been full historically. The BC Ferries website shows, in real time, the free space on their sailings for the current day (and the next few sailings on the next day), but historical data is not available. For this project, I set up a script to scrape the tabular data from the BC Ferries website to build up a dataset to analyze. I focussed on the route from Swartz Bay to Tsawwassen. The [current conditions](https://www.bcferries.com/current-conditions/SWB-TSA?) for that route are updated every 5 minutes, so my web scraping script ran at the same interval and I stored the results in my own postgres database.
 
+The current conditions site includes information such as the sailing time, ferry name, space available for future sailings (in terms of percentage overall, for the lower vehicle deck, and upper vehicle deck), and the status for in progress/completed sailings such as their arrival time or if the sailing was cancelled. Here is an example of the current conditions from 7 Oct 2022.
+
+![](/images/current_conditions.png)
+
+I have been collecting data since 2022-06-29 and for this analysis, will be considering data up to 2022-10-07. Here are some basic stats about the dataset I collected over this period:
+* Total number of snapshots of the current conditions table: >275,000
+* Total number of sailings: 1388
+* Number of distinct ferries: 5
+
+One of the most basic questions to answer regarding situation 1 is how often do you need a reservation? Out of the 1388 unique sailings, only 1268 sailings had enough data to answer this question because of missing data around reservation cutoff time while I was developing the web scraping code. Of these 1268 sailings, 365 (28.8%) were full 30 minutes before departure.
+
+The sailings were much more likely to be full on certain days of the week. The following plot shows sailings on Sunday, Monday, and Friday were the most likely to be full. Sunday/Monday sailings were full more often from the rush of mainland residents returning home after the weekend. Friday sailings were full more often because of Vancouver Island residents visiting the mainland for the weekend.
+
+![](/images/proportion_full_dow.png)
+
+The sailings were much more likely to be full at certain times of the day. The following plot shows the proportion of full sailings by departure time hour. Note that some departure times (e.g., 6 am, 8 pm) were observed infrequently so the proportion estimates have large uncertainty. The 7 pm sailings were much more likely to be full than the 9 am sailings.
+
+![](/images/proportion_full_hour.png)
