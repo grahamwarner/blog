@@ -22,7 +22,7 @@ In order to predict if or when a sailing is going to be full, we need to collect
 
 The current conditions site includes information such as the sailing time, ferry name, space available for future sailings (in terms of percentage overall, for the lower vehicle deck, and upper vehicle deck), and the status for in progress/completed sailings such as their arrival time or if the sailing was cancelled. Here is an example of the current conditions from 7 Oct 2022.
 
-![](/images/current_conditions.png)
+![](/grahamwarner/images/current_conditions.png)
 
 I have been collecting data since 2022-06-29 and for this analysis, will be considering data up to 2022-10-07. Here are some basic stats about the dataset I collected over this period:
 * Total number of snapshots of the current conditions table: >275,000
@@ -33,8 +33,8 @@ One of the most basic questions to answer regarding situation 1 is how often do 
 
 The sailings were much more likely to be full on certain days of the week. The following plot shows sailings on Sunday, Monday, and Friday were the most likely to be full. Sunday/Monday sailings were full more often from the rush of mainland residents returning home after the weekend. Friday sailings were full more often because of Vancouver Island residents visiting the mainland for the weekend.
 
-![](/images/proportion_full_dow.png)
+![](/grahamwarner/images/proportion_full_dow.png)
 
 The sailings were much more likely to be full at certain times of the day. The following plot shows the proportion of full sailings by departure time hour. Note that some departure times (e.g., 6 am, 8 pm) were observed infrequently so the proportion estimates have large uncertainty. The 7 pm sailings were much more likely to be full than the 9 am sailings.
 
-![](/images/proportion_full_hour.png)
+![](/grahamwarner/images/proportion_full_hour.png)
